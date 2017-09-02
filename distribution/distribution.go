@@ -51,7 +51,7 @@ func Gamma(k, theta float64) float64 {
 	for {
 		x := rand.NormFloat64()
 		v := 1 + c*x
-		if v < 0 {
+		if v <= 0 {
 			continue
 		}
 		v = v * v * v
